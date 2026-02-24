@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emi Dinh | CS @ Cal Poly SLO</title>
+    <meta
+      name="description"
+      content="Emi Dinh's personal portfolio: computer science projects, photography, and curiosities."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23174A44'/%3E%3Ctext x='50%25' y='55%25' font-size='30' text-anchor='middle' fill='%23f8f1e7' font-family='Arial'%3EE%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-layer bg-layer-1"></div>
+    <div class="bg-layer bg-layer-2"></div>
+
+    <header class="site-header reveal">
+      <nav aria-label="Main navigation">
+        <a href="#now">Now</a>
+        <a href="#projects">Projects</a>
+        <a href="#photos">Photography</a>
+        <a href="#about">About</a>
+        <a href="#build-log">Build Log</a>
+      </nav>
+      <div class="social-links header-social" aria-label="Social profiles">
+        <a href="https://github.com/emi-a-dinh" target="_blank" rel="noreferrer"
+          >GitHub</a
+        >
+        <a
+          href="https://www.linkedin.com/in/emi-d/"
+          target="_blank"
+          rel="noreferrer"
+          >LinkedIn</a
+        >
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero reveal">
+        <p class="hero-tag">
+          Computer Science @ California Polytechnic, San Luis Obispo
+        </p>
+        <h1>
+          <span id="greeting-text" class="greeting-text">Hello</span>, I’m Emi.
+          <span class="hero-subtitle"
+            >I build software with heart and curiosity.</span
+          >
+        </h1>
+        <p class="hero-intro">
+          I’m a CS major who loves learning new things, shipping thoughtful
+          personal projects, and telling stories through photography.
+        </p>
+        <div class="social-links hero-social" aria-label="Social profiles">
+          <a
+            href="https://github.com/emi-a-dinh"
+            target="_blank"
+            rel="noreferrer"
+            >View GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/emi-d/"
+            target="_blank"
+            rel="noreferrer"
+            >Connect on LinkedIn</a
+          >
+        </div>
+        <div class="hero-pill-row">
+          <span class="pill">Coffee lover</span>
+          <span class="pill">Matcha fan</span>
+          <span class="pill">Pickleball player</span>
+        </div>
+        <div class="curiosity-card">
+          <p>Currently curious about</p>
+          <strong id="curiosity-text">human-centered app design</strong>
+        </div>
+      </section>
+
+      <section id="now" class="panel reveal">
+        <div class="section-head">
+          <h2>Now</h2>
+          <p>What I am actively building, learning, and exploring this week.</p>
+        </div>
+        <div class="now-grid">
+          <article class="now-card">
+            <p class="now-label">Building</p>
+            <p class="now-value">TaskLogger polish + portfolio improvements</p>
+          </article>
+          <article class="now-card">
+            <p class="now-label">Learning</p>
+            <p class="now-value">Japanese practice + cleaner full-stack architecture patterns</p>
+          </article>
+          <article class="now-card">
+            <p class="now-label">Reading</p>
+            <p class="now-value"><em>Fluent Forever</em> and taking language-learning notes</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="panel reveal">
+        <div class="section-head">
+          <h2>CS Projects</h2>
+          <p>A growing collection of things I’ve built and learned from.</p>
+        </div>
+        <div id="project-grid" class="project-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="photos" class="panel reveal">
+        <div class="section-head">
+          <h2>Photography</h2>
+          <p>
+            Frames from everyday scenes, campus life, and cozy cafe moments.
+          </p>
+        </div>
+        <div class="photo-strip">
+          <article
+            class="photo-card"
+            data-photo-index="0"
+            role="button"
+            tabindex="0"
+            aria-label="Open photo: Badminton Graduation Shoot"
+          >
+            <h3>Badminton Graduation Shoot</h3>
+            <p>Graduation photoshoot in June.</p>
+          </article>
+          <article
+            class="photo-card"
+            data-photo-index="1"
+            role="button"
+            tabindex="0"
+            aria-label="Open photo: Berkeley Graduation Shoot"
+          >
+            <h3>Berkeley Graduation Shoot</h3>
+            <p>Graduation photoshoot in May.</p>
+          </article>
+          <article
+            class="photo-card"
+            data-photo-index="2"
+            role="button"
+            tabindex="0"
+            aria-label="Open photo: Alishan, Taiwan"
+          >
+            <h3>Alishan, Taiwan</h3>
+            <p>This was in Alishan during April.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="about-grid">
+        <section class="panel reveal">
+          <div class="section-head">
+            <h2>About Me</h2>
+          </div>
+          <p class="about-text">
+            I’m the kind of person who asks “how does this work?” a lot. That
+            curiosity pushes me to explore new technologies, improve my
+            engineering craft, and keep learning outside class. When I’m not
+            coding, I’m usually taking photos, grabbing coffee or matcha with
+            friends, or playing pickleball. I also like learning new languages.
+            I am currently learning Japanese (日本語).
+          </p>
+        </section>
+
+        <aside
+          class="panel reveal book-panel"
+          aria-label="Reading goal progress"
+        >
+          <p class="book-label">2026 Reading Goal</p>
+          <p class="book-count"><strong>5</strong> / 52 books</p>
+          <div
+            class="book-progress"
+            role="progressbar"
+            aria-valuemin="0"
+            aria-valuemax="52"
+            aria-valuenow="5"
+          >
+            <span class="book-progress-fill"></span>
+          </div>
+          <p class="book-current">Currently reading</p>
+          <p class="book-title"><em>Fluent Forever</em></p>
+          <p class="book-author">by Gabriel Wyner</p>
+        </aside>
+      </section>
+
+      <section id="build-log" class="panel reveal">
+        <div class="section-head">
+          <h2>Build Log</h2>
+          <p>Recent milestones and shipping notes from GitHub activity.</p>
+        </div>
+        <p id="build-log-status" class="build-log-status">Syncing GitHub activity...</p>
+        <div id="build-log-list" class="build-log-list"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer reveal">
+      <p>Built by Emi Dinh · Designed for emidinh.com</p>
+      <div class="footer-links">
+        <a href="mailto:emi.dinh.6@gmail.com">emi.dinh.6@gmail.com</a>
+        <a href="https://github.com/emi-a-dinh" target="_blank" rel="noreferrer"
+          >GitHub</a
+        >
+        <a
+          href="https://www.linkedin.com/in/emi-d/"
+          target="_blank"
+          rel="noreferrer"
+          >LinkedIn</a
+        >
+      </div>
+    </footer>
+
+    <div
+      id="project-modal"
+      class="project-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-labelledby="project-modal-title"
+    >
+      <button
+        id="project-modal-backdrop"
+        class="project-modal-backdrop"
+        aria-label="Close project details"
+      ></button>
+      <section class="project-modal-panel">
+        <button
+          id="project-modal-close"
+          class="project-modal-close"
+          aria-label="Close popup"
+        >
+          Close
+        </button>
+        <div class="project-modal-media-wrap">
+          <button
+            id="project-modal-prev"
+            class="project-modal-nav"
+            aria-label="Previous screenshot"
+          >
+            ‹
+          </button>
+          <img id="project-modal-image" src="" alt="" />
+          <button
+            id="project-modal-next"
+            class="project-modal-nav"
+            aria-label="Next screenshot"
+          >
+            ›
+          </button>
+        </div>
+        <div id="project-modal-thumbs" class="project-modal-thumbs"></div>
+        <h3 id="project-modal-title"></h3>
+        <p id="project-modal-description"></p>
+        <div id="project-modal-tags" class="project-modal-tags"></div>
+        <a id="project-modal-link" href="" target="_blank" rel="noreferrer"
+          >Open project</a
+        >
+      </section>
+    </div>
+
+    <div
+      id="photo-modal"
+      class="photo-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-labelledby="photo-modal-title"
+    >
+      <button
+        id="photo-modal-backdrop"
+        class="photo-modal-backdrop"
+        aria-label="Close photo"
+      ></button>
+      <section class="photo-modal-panel">
+        <button id="photo-modal-close" class="photo-modal-close" aria-label="Close photo popup">
+          Close
+        </button>
+        <img id="photo-modal-image" src="./assets/project-placeholder.svg" alt="Photography preview" />
+        <h3 id="photo-modal-title"></h3>
+        <p id="photo-modal-description"></p>
+      </section>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

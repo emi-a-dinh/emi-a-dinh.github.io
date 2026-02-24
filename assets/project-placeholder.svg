@@ -1,0 +1,23 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1200" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9EE" />
+      <stop offset="1" stop-color="#F2E7D7" />
+    </linearGradient>
+    <radialGradient id="g2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(980 120) rotate(134) scale(320 200)">
+      <stop stop-color="#174A44" stop-opacity="0.22" />
+      <stop offset="1" stop-color="#174A44" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#g1)" />
+  <ellipse cx="980" cy="120" rx="320" ry="200" fill="url(#g2)" />
+  <rect x="120" y="118" width="960" height="484" rx="26" fill="#FFFCF6" stroke="#174A44" stroke-opacity="0.25" />
+  <rect x="172" y="180" width="210" height="24" rx="12" fill="#174A44" fill-opacity="0.18" />
+  <rect x="172" y="230" width="500" height="20" rx="10" fill="#174A44" fill-opacity="0.12" />
+  <rect x="172" y="264" width="420" height="20" rx="10" fill="#174A44" fill-opacity="0.1" />
+  <rect x="172" y="324" width="360" height="210" rx="18" fill="#174A44" fill-opacity="0.08" />
+  <rect x="550" y="324" width="478" height="64" rx="14" fill="#174A44" fill-opacity="0.1" />
+  <rect x="550" y="404" width="478" height="64" rx="14" fill="#174A44" fill-opacity="0.08" />
+  <rect x="550" y="484" width="300" height="50" rx="12" fill="#174A44" fill-opacity="0.14" />
+  <text x="600" y="640" text-anchor="middle" fill="#174A44" style="font: 700 36px 'Manrope', sans-serif">Project Preview</text>
+</svg>

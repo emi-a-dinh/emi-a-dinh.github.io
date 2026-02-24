@@ -1,0 +1,64 @@
+<svg width="1584" height="396" viewBox="0 0 1584 396" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1584" y2="396" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8F1E7" />
+      <stop offset="1" stop-color="#F2E7D7" />
+    </linearGradient>
+    <radialGradient id="blob1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1300 40) rotate(130) scale(360 260)">
+      <stop stop-color="#174A44" stop-opacity="0.22" />
+      <stop offset="1" stop-color="#174A44" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="blob2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 360) rotate(-35) scale(320 200)">
+      <stop stop-color="#174A44" stop-opacity="0.18" />
+      <stop offset="1" stop-color="#174A44" stop-opacity="0" />
+    </radialGradient>
+    <filter id="shadow" x="0" y="0" width="1584" height="396" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#174A44" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <rect width="1584" height="396" fill="url(#bg)" />
+  <ellipse cx="1300" cy="40" rx="370" ry="250" fill="url(#blob1)" />
+  <ellipse cx="180" cy="360" rx="320" ry="200" fill="url(#blob2)" />
+
+  <g filter="url(#shadow)">
+    <rect x="78" y="56" width="945" height="286" rx="38" fill="#FFFAF2" fill-opacity="0.94" stroke="#174A44" stroke-opacity="0.26" />
+  </g>
+
+  <text x="126" y="148" fill="#174A44" style="font: 700 58px 'Playfair Display', Georgia, serif; letter-spacing: 0.5px">Emi Dinh</text>
+  <text x="126" y="194" fill="#2F6A63" style="font: 600 23px 'Manrope', 'Avenir Next', sans-serif">Computer Science @ Cal Poly San Luis Obispo</text>
+  <text x="126" y="234" fill="#4F615D" style="font: 500 22px 'Manrope', 'Avenir Next', sans-serif">Building thoughtful software projects with curiosity and care</text>
+
+  <g>
+    <rect x="126" y="260" width="140" height="42" rx="21" fill="#174A44" fill-opacity="0.1" stroke="#174A44" stroke-opacity="0.22" />
+    <text x="196" y="287" text-anchor="middle" fill="#174A44" style="font: 700 18px 'Manrope', 'Avenir Next', sans-serif">Coffee</text>
+  </g>
+  <g>
+    <rect x="280" y="260" width="140" height="42" rx="21" fill="#174A44" fill-opacity="0.1" stroke="#174A44" stroke-opacity="0.22" />
+    <text x="350" y="287" text-anchor="middle" fill="#174A44" style="font: 700 18px 'Manrope', 'Avenir Next', sans-serif">Matcha</text>
+  </g>
+  <g>
+    <rect x="434" y="260" width="158" height="42" rx="21" fill="#174A44" fill-opacity="0.1" stroke="#174A44" stroke-opacity="0.22" />
+    <text x="513" y="287" text-anchor="middle" fill="#174A44" style="font: 700 18px 'Manrope', 'Avenir Next', sans-serif">Pickleball</text>
+  </g>
+
+  <g opacity="0.95">
+    <ellipse cx="1248" cy="210" rx="86" ry="72" fill="#174A44" fill-opacity="0.08" />
+    <rect x="1206" y="182" width="84" height="60" rx="14" fill="#174A44" fill-opacity="0.14" stroke="#174A44" stroke-opacity="0.45" stroke-width="3" />
+    <path d="M1290 198H1303C1311 198 1318 205 1318 214C1318 223 1311 230 1303 230H1290" stroke="#174A44" stroke-opacity="0.45" stroke-width="3" stroke-linecap="round" />
+    <path d="M1214 249H1282" stroke="#174A44" stroke-opacity="0.45" stroke-width="3" stroke-linecap="round" />
+    <path d="M1232 174C1228 168 1228 160 1234 154" stroke="#174A44" stroke-opacity="0.4" stroke-width="3" stroke-linecap="round" />
+    <path d="M1248 172C1244 166 1244 158 1250 152" stroke="#174A44" stroke-opacity="0.4" stroke-width="3" stroke-linecap="round" />
+    <path d="M1264 174C1260 168 1260 160 1266 154" stroke="#174A44" stroke-opacity="0.4" stroke-width="3" stroke-linecap="round" />
+    <circle cx="1248" cy="212" r="18" fill="#92BAA9" fill-opacity="0.45" />
+  </g>
+
+  <g opacity="0.88">
+    <rect x="1358" y="136" width="156" height="182" rx="28" fill="#FFFAF2" stroke="#174A44" stroke-opacity="0.22" />
+    <text x="1436" y="180" text-anchor="middle" fill="#174A44" style="font: 700 22px 'Manrope', 'Avenir Next', sans-serif">Curious</text>
+    <text x="1436" y="208" text-anchor="middle" fill="#4F615D" style="font: 500 18px 'Manrope', 'Avenir Next', sans-serif">about</text>
+    <text x="1436" y="242" text-anchor="middle" fill="#174A44" style="font: 700 18px 'Manrope', 'Avenir Next', sans-serif">code</text>
+    <text x="1436" y="268" text-anchor="middle" fill="#174A44" style="font: 700 18px 'Manrope', 'Avenir Next', sans-serif">design</text>
+    <text x="1436" y="294" text-anchor="middle" fill="#174A44" style="font: 700 18px 'Manrope', 'Avenir Next', sans-serif">people</text>
+  </g>
+</svg>
