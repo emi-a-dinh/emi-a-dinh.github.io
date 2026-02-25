@@ -1,64 +1,72 @@
 <svg width="1584" height="396" viewBox="0 0 1584 396" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1584" y2="396" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F8F1E7" />
-      <stop offset="1" stop-color="#F2E7D7" />
+      <stop stop-color="#F8F1E7"/>
+      <stop offset="1" stop-color="#EFE3D0"/>
     </linearGradient>
-    <radialGradient id="blob1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1300 40) rotate(130) scale(360 260)">
-      <stop stop-color="#174A44" stop-opacity="0.22" />
-      <stop offset="1" stop-color="#174A44" stop-opacity="0" />
-    </radialGradient>
-    <radialGradient id="blob2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 360) rotate(-35) scale(320 200)">
-      <stop stop-color="#174A44" stop-opacity="0.18" />
-      <stop offset="1" stop-color="#174A44" stop-opacity="0" />
-    </radialGradient>
-    <filter id="shadow" x="0" y="0" width="1584" height="396" filterUnits="userSpaceOnUse">
-      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#174A44" flood-opacity="0.18" />
+    <linearGradient id="card" x1="0" y1="0" x2="1030" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFDF9"/>
+      <stop offset="1" stop-color="#FBF3E8"/>
+    </linearGradient>
+    <linearGradient id="accentSoft" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#174A44" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#174A44" stop-opacity="0.03"/>
+    </linearGradient>
+    <filter id="cardShadow" x="44" y="30" width="1110" height="336" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#174A44" flood-opacity="0.16"/>
     </filter>
   </defs>
 
-  <rect width="1584" height="396" fill="url(#bg)" />
-  <ellipse cx="1300" cy="40" rx="370" ry="250" fill="url(#blob1)" />
-  <ellipse cx="180" cy="360" rx="320" ry="200" fill="url(#blob2)" />
+  <rect width="1584" height="396" fill="url(#bg)"/>
 
-  <g filter="url(#shadow)">
-    <rect x="78" y="56" width="945" height="286" rx="38" fill="#FFFAF2" fill-opacity="0.94" stroke="#174A44" stroke-opacity="0.26" />
+  <g opacity="0.28">
+    <path d="M0 328C220 290 370 360 590 328C820 294 1010 362 1240 324C1400 298 1500 306 1584 318V396H0V328Z" fill="#174A44" fill-opacity="0.12"/>
+    <path d="M0 350C200 334 360 386 580 356C790 328 980 388 1220 354C1380 332 1490 342 1584 352V396H0V350Z" fill="#174A44" fill-opacity="0.07"/>
   </g>
 
-  <text x="126" y="148" fill="#174A44" style="font: 700 58px 'Playfair Display', Georgia, serif; letter-spacing: 0.5px">Emi Dinh</text>
-  <text x="126" y="194" fill="#2F6A63" style="font: 600 23px 'Manrope', 'Avenir Next', sans-serif">Computer Science @ Cal Poly San Luis Obispo</text>
-  <text x="126" y="234" fill="#4F615D" style="font: 500 22px 'Manrope', 'Avenir Next', sans-serif">Building thoughtful software projects with curiosity and care</text>
+  <g filter="url(#cardShadow)">
+    <rect x="72" y="50" width="1040" height="296" rx="34" fill="url(#card)" stroke="#174A44" stroke-opacity="0.24"/>
+  </g>
+
+  <circle cx="1018" cy="198" r="108" fill="url(#accentSoft)"/>
+  <circle cx="1018" cy="198" r="76" fill="#174A44" fill-opacity="0.07"/>
+
+  <text x="126" y="142" fill="#174A44" style="font: 700 66px 'Playfair Display', Georgia, serif; letter-spacing: 0.4px">Emi Dinh</text>
+  <text x="126" y="192" fill="#2F6A63" style="font: 600 24px 'Manrope', 'Avenir Next', sans-serif">Computer Science @ Cal Poly San Luis Obispo</text>
+  <text x="126" y="238" fill="#4D605C" style="font: 500 22px 'Manrope', 'Avenir Next', sans-serif">Curious builder exploring AI, systems, and human-centered software.</text>
 
   <g>
-    <rect x="126" y="260" width="140" height="42" rx="21" fill="#174A44" fill-opacity="0.1" stroke="#174A44" stroke-opacity="0.22" />
-    <text x="196" y="287" text-anchor="middle" fill="#174A44" style="font: 700 18px 'Manrope', 'Avenir Next', sans-serif">Coffee</text>
+    <rect x="126" y="262" width="126" height="42" rx="21" fill="#174A44" fill-opacity="0.10" stroke="#174A44" stroke-opacity="0.22"/>
+    <text x="189" y="288" text-anchor="middle" fill="#174A44" style="font: 700 17px 'Manrope', 'Avenir Next', sans-serif">Coffee</text>
   </g>
   <g>
-    <rect x="280" y="260" width="140" height="42" rx="21" fill="#174A44" fill-opacity="0.1" stroke="#174A44" stroke-opacity="0.22" />
-    <text x="350" y="287" text-anchor="middle" fill="#174A44" style="font: 700 18px 'Manrope', 'Avenir Next', sans-serif">Matcha</text>
+    <rect x="266" y="262" width="126" height="42" rx="21" fill="#174A44" fill-opacity="0.10" stroke="#174A44" stroke-opacity="0.22"/>
+    <text x="329" y="288" text-anchor="middle" fill="#174A44" style="font: 700 17px 'Manrope', 'Avenir Next', sans-serif">Matcha</text>
   </g>
   <g>
-    <rect x="434" y="260" width="158" height="42" rx="21" fill="#174A44" fill-opacity="0.1" stroke="#174A44" stroke-opacity="0.22" />
-    <text x="513" y="287" text-anchor="middle" fill="#174A44" style="font: 700 18px 'Manrope', 'Avenir Next', sans-serif">Pickleball</text>
+    <rect x="406" y="262" width="152" height="42" rx="21" fill="#174A44" fill-opacity="0.10" stroke="#174A44" stroke-opacity="0.22"/>
+    <text x="482" y="288" text-anchor="middle" fill="#174A44" style="font: 700 17px 'Manrope', 'Avenir Next', sans-serif">Pickleball</text>
   </g>
 
-  <g opacity="0.95">
-    <ellipse cx="1248" cy="210" rx="86" ry="72" fill="#174A44" fill-opacity="0.08" />
-    <rect x="1206" y="182" width="84" height="60" rx="14" fill="#174A44" fill-opacity="0.14" stroke="#174A44" stroke-opacity="0.45" stroke-width="3" />
-    <path d="M1290 198H1303C1311 198 1318 205 1318 214C1318 223 1311 230 1303 230H1290" stroke="#174A44" stroke-opacity="0.45" stroke-width="3" stroke-linecap="round" />
-    <path d="M1214 249H1282" stroke="#174A44" stroke-opacity="0.45" stroke-width="3" stroke-linecap="round" />
-    <path d="M1232 174C1228 168 1228 160 1234 154" stroke="#174A44" stroke-opacity="0.4" stroke-width="3" stroke-linecap="round" />
-    <path d="M1248 172C1244 166 1244 158 1250 152" stroke="#174A44" stroke-opacity="0.4" stroke-width="3" stroke-linecap="round" />
-    <path d="M1264 174C1260 168 1260 160 1266 154" stroke="#174A44" stroke-opacity="0.4" stroke-width="3" stroke-linecap="round" />
-    <circle cx="1248" cy="212" r="18" fill="#92BAA9" fill-opacity="0.45" />
+  <g transform="translate(948 120)">
+    <rect x="0" y="0" width="220" height="162" rx="30" fill="#FFFBF5" stroke="#174A44" stroke-opacity="0.20"/>
+    <text x="110" y="34" text-anchor="middle" fill="#174A44" style="font: 700 19px 'Manrope', 'Avenir Next', sans-serif">Cafe Energy</text>
+
+    <g transform="translate(54 52)">
+      <rect x="0" y="12" width="74" height="54" rx="14" fill="#174A44" fill-opacity="0.12" stroke="#174A44" stroke-opacity="0.42" stroke-width="2.5"/>
+      <path d="M74 26H86C92 26 97 31 97 37C97 43 92 48 86 48H74" stroke="#174A44" stroke-opacity="0.42" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M10 72H68" stroke="#174A44" stroke-opacity="0.42" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M18 0C14 -6 15 -13 20 -18" stroke="#174A44" stroke-opacity="0.33" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M36 -2C32 -8 33 -15 38 -20" stroke="#174A44" stroke-opacity="0.33" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M54 0C50 -6 51 -13 56 -18" stroke="#174A44" stroke-opacity="0.33" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+    <path d="M156 88C170 78 184 89 182 104C180 117 166 124 154 116C141 108 143 95 156 88Z" fill="#6FAF91"/>
+    <path d="M154 116C160 106 167 99 177 95" stroke="#3A6B56" stroke-width="2" stroke-linecap="round"/>
+    <text x="110" y="144" text-anchor="middle" fill="#2F6A63" style="font: 700 16px 'Manrope', 'Avenir Next', sans-serif">curiosity + craft</text>
   </g>
 
-  <g opacity="0.88">
-    <rect x="1358" y="136" width="156" height="182" rx="28" fill="#FFFAF2" stroke="#174A44" stroke-opacity="0.22" />
-    <text x="1436" y="180" text-anchor="middle" fill="#174A44" style="font: 700 22px 'Manrope', 'Avenir Next', sans-serif">Curious</text>
-    <text x="1436" y="208" text-anchor="middle" fill="#4F615D" style="font: 500 18px 'Manrope', 'Avenir Next', sans-serif">about</text>
-    <text x="1436" y="242" text-anchor="middle" fill="#174A44" style="font: 700 18px 'Manrope', 'Avenir Next', sans-serif">code</text>
-    <text x="1436" y="268" text-anchor="middle" fill="#174A44" style="font: 700 18px 'Manrope', 'Avenir Next', sans-serif">design</text>
-    <text x="1436" y="294" text-anchor="middle" fill="#174A44" style="font: 700 18px 'Manrope', 'Avenir Next', sans-serif">people</text>
-  </g>
+  <text x="1232" y="151" fill="#174A44" style="font: 700 32px 'Playfair Display', Georgia, serif">Open to SWE internships</text>
+  <text x="1232" y="192" fill="#4D605C" style="font: 600 20px 'Manrope', 'Avenir Next', sans-serif">Full-stack • AI tooling • Product-minded</text>
+  <text x="1232" y="234" fill="#4D605C" style="font: 500 19px 'Manrope', 'Avenir Next', sans-serif">github.com/emi-a-dinh  |  linkedin.com/in/emi-d</text>
 </svg>

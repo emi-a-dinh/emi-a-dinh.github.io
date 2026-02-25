@@ -104,6 +104,8 @@ const githubBuildLogConfig = {
   username: "emi-a-dinh",
   eventLimit: 30,
   entryLimit: 8,
+  repoLimit: 4,
+  commitsPerRepo: 5,
 };
 
 function escapeHtml(text) {
@@ -197,6 +199,28 @@ function mapGitHubEventsToLogEntries(events) {
   });
 
   return items.slice(0, githubBuildLogConfig.entryLimit);
+}
+
+function mapGitHubCommitsToLogEntries(commits, repoName) {
+  return commits.map((commit) => {
+    const message = (commit?.commit?.message || "Updated code").split("\n")[0];
+    return {
+      date: formatLogDate(commit.commit?.author?.date),
+      title: `Pushed commit to ${repoName}`,
+      note: message,
+      url: commit.html_url || `https://github.com/${repoName}`,
+      timestamp: commit.commit?.author?.date,
+    };
+  });
+}
+
+async function fetchGitHubJson(url) {
+  const response = await fetch(url, {
+    headers: { Accept: "application/vnd.github+json" },
+    cache: "no-store",
+  });
+  if (!response.ok) throw new Error(`GitHub API ${response.status}`);
+  return response.json();
 }
 
 function getLogEntryTimestamp(entry) {
@@ -519,19 +543,41 @@ async function loadGitHubBuildLog() {
   renderBuildLog(fallbackEntries);
 
   try {
-    const response = await fetch(
-      `https://api.github.com/users/${githubBuildLogConfig.username}/events/public?per_page=${githubBuildLogConfig.eventLimit}`,
-      {
-        headers: { Accept: "application/vnd.github+json" },
-      },
+    const eventUrl = `https://api.github.com/users/${githubBuildLogConfig.username}/events/public?per_page=${githubBuildLogConfig.eventLimit}&_=${Date.now()}`;
+    const repoUrl = `https://api.github.com/users/${githubBuildLogConfig.username}/repos?sort=pushed&per_page=${githubBuildLogConfig.repoLimit}&_=${Date.now()}`;
+
+    const [events, repos] = await Promise.all([
+      fetchGitHubJson(eventUrl).catch(() => []),
+      fetchGitHubJson(repoUrl),
+    ]);
+
+    const eventEntries = mapGitHubEventsToLogEntries(events);
+    const commitEntryGroups = await Promise.all(
+      repos.map(async (repo) => {
+        const repoName = repo?.full_name;
+        if (!repoName) return [];
+        const commitsUrl = `https://api.github.com/repos/${repoName}/commits?per_page=${githubBuildLogConfig.commitsPerRepo}&_=${Date.now()}`;
+        try {
+          const commits = await fetchGitHubJson(commitsUrl);
+          return mapGitHubCommitsToLogEntries(commits, repoName);
+        } catch {
+          return [];
+        }
+      }),
     );
 
-    if (!response.ok) throw new Error(`GitHub API ${response.status}`);
-    const events = await response.json();
-    const githubEntries = mapGitHubEventsToLogEntries(events);
+    const commitEntries = commitEntryGroups.flat();
+    const mergedEntries = [...eventEntries, ...commitEntries]
+      .filter((entry) => entry.timestamp)
+      .sort((a, b) => getLogEntryTimestamp(b) - getLogEntryTimestamp(a))
+      .filter(
+        (entry, index, all) =>
+          all.findIndex((candidate) => candidate.url === entry.url) === index,
+      )
+      .slice(0, githubBuildLogConfig.entryLimit);
 
-    if (githubEntries.length) {
-      renderBuildLog(githubEntries);
+    if (mergedEntries.length) {
+      renderBuildLog(mergedEntries);
       if (status) status.textContent = `Live from GitHub @${githubBuildLogConfig.username}`;
     } else if (status) {
       status.textContent = "No recent public GitHub events. Showing local log.";
