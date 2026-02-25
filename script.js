@@ -103,7 +103,7 @@ const buildLogEntries = [
 const githubBuildLogConfig = {
   username: "emi-a-dinh",
   eventLimit: 30,
-  entryLimit: 8,
+  entryLimit: 3,
   repoLimit: 4,
   commitsPerRepo: 5,
 };
